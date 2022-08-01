@@ -213,7 +213,7 @@ ul#services li{
     }
 }
 /* Media Queries */
-@media(max-width: 10000px){
+@media(max-width: 420px){
   header #branding,
   header nav,
   header nav li,
