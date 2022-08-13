@@ -6,10 +6,10 @@
 }
     
 body{
-  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  font: 3.2vw/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;    
-  background-color:#f4f4f4;
+  background-color:#d5f4ff;
 }
 
 /* Global */
@@ -47,12 +47,13 @@ header{
   background:#35424a;
   color:#ffffff;
   padding-top:30px;
+  padding-bottom:30px;
   min-height:70px;
   border-bottom:#00ccff 5px solid;
   border-top:#00ccff 5px solid;
   border-left: #00ccff 5px solid;
   border-right: #00ccff  5px solid;
-
+  border-radius: 10px; 
   
 }
 
@@ -60,7 +61,7 @@ header a{
   color:#ffffff;
   text-decoration:none;
   text-transform: uppercase;
-  font-size:16px;
+  font-size:3.3vw;
 }
 
 header li{
@@ -160,6 +161,7 @@ ul#services li{
     position: absolute;top: 270px;left:20px
 }
 .triangles{
+   font-size: 15px;
    margin:15px;padding: 10px;
    font-family: Courier;
    font-weight: bold;
@@ -168,6 +170,7 @@ ul#services li{
 }
 
 .int-finance-g10{
+   font-size: 15px;
    margin:15px;padding: 10px;
    font-family: Courier;
    font-weight: bold;
@@ -176,44 +179,99 @@ ul#services li{
    
 }
 .g10-algebra{
+   font-size: 15px;
    margin:15px;padding: 10px;
    font-family: 'Courier';
    font-weight: bold;
    align-content: center;
    background: ghostwhite;border-radius: 10px;
  }
-.g11-equations{
-   margin:15px;padding: 10px;
-   font-family: Courier;
-   font-weight: bold;
-   align-content: center;
-   background: ghostwhite;border-radius: 10px;
-  
 .g11-euclid{
+   font-size: 15px;
+    margin:15px;padding: 10px;
+   font-family: 'Courier';
+   font-weight: bold;
+   align-content: center;
+   background: ghostwhite;border-radius: 10px;
+}
+.g11-eq{
+    font-size: 15px;
+    margin:15px;padding: 10px;
+   font-family: 'Courier';
+   font-weight: bold;
+   align-content: center;
+   background: ghostwhite;border-radius: 10px;
+}
+.g11-finance{
+    font-size: 15px;
+    margin:15px;padding: 10px;
+   font-family: 'Courier';
+   font-weight: bold;
+   align-content: center;
+   background: ghostwhite;border-radius: 10px;
+}
+
+ .g12-stats{
+   font-size: 15px;
    margin:15px;padding: 10px;
    font-family: 'Courier';
    font-weight: bold;
    align-content: center;
    background: ghostwhite;border-radius: 10px;
 }
-.g12-stats{
+.g12-geo{
+   font-size: 15px;
    margin:15px;padding: 10px;
    font-family: 'Courier';
    font-weight: bold;
    align-content: center;
    background: ghostwhite;border-radius: 10px;
 }
+.g12-finance{
+   font-size: 15px;
+   margin:15px;padding: 10px;
+   font-family: 'Courier';
+   font-weight: bold;
+   align-content: center;
+   background: ghostwhite;border-radius: 10px;
+}
+
 .g10-exams{
  align-content: center;   
 }
-@media(max-width: 1024px){
-    .grades{
-        align-content: center;
-        position:absolute; top:300px
+.intro{
+    background: #ffd5f4;border-radius: 10px;
+    font-family: Courier;
+    text-align: center;
+    font-size: 3.9vw;
+    padding: 10px;
+}
+
+.grades img{
+    width: 280px;
+    
+}
+.grades{
+  background: #d5f4ff;border-radius: 10px;width:100%;   
+  position:absolute; top:410px; 
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media(min-width: 580px){
+    .grades img{
+        width: 600px;
+        
     }
 }
+
 /* Media Queries */
-@media(max-width: 728px){
+@media(max-width: 1023px){
   header #branding,
   header nav,
   header nav li,
@@ -243,5 +301,13 @@ ul#services li{
   #newsletter form input[type="email"], .quote input, .quote textarea{
     width:100%;
     margin-bottom:5px;
+  }
+  .grades{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-wrap: wrap;
   }
  }
